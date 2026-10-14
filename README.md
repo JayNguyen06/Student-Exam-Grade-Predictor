@@ -31,8 +31,17 @@ $$
 w_{\text{new}} = w_{\text{old}} - \alpha \times \text{Weight Gradient}
 $$
 
-where
+
+Where:
+
 $$
-\alpha = \text{Learning_rate}
-\text{Bias Gradient} = 2 * \text{Mean (error)}
+\alpha = \text{Learning Rate}
+$$
+
+$$
+\text{Bias Gradient} = 2 \times \operatorname{Mean}(\text{Error})
+$$
+
+$$
+\text{Weight Gradient} = 2 \times \operatorname{Mean}(\text{Error} \times X)
 $$
