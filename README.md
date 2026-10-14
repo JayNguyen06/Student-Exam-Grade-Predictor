@@ -31,7 +31,6 @@ $$
 w_{\text{new}} = w_{\text{old}} - \alpha \times \text{Weight Gradient}
 $$
 
-
 Where:
 
 $$
@@ -39,9 +38,9 @@ $$
 $$
 
 $$
-\text{Bias Gradient} = 2 \times \operatorname{Mean}(\text{Error})
+\text{Bias Gradient} = 2 \times \text{Mean}(\text{Error})
 $$
 
 $$
-\text{Weight Gradient} = 2 \times \operatorname{Mean}(\text{Error} \times X)
+\text{Weight Gradient} = 2 \times \text{Mean}(\text{Error} \times X)
 $$
