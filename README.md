@@ -11,7 +11,7 @@ This project is a simple machine learning model, built from scratch, using NumPY
 5. Gradient: Using the error obtained, we use it to train and update the model's weights and bias.
 6. After running for a certain amount of loops (for this project, 100 loops), return the final weights and bias such that MSE is minimized. Then, pass on new students data but without their actual exam score. Using the train model's weights, bias and standardization of data, the model makes prediction of the exam result of the new students.
 
-Formulas:
+# Formulas:
 
 1. Linear Regression Formula:
 
@@ -31,16 +31,8 @@ $$
 w_{\text{new}} = w_{\text{old}} - \alpha \times \text{Weight Gradient}
 $$
 
-## Gradient Descent
-
-The partial derivative with respect to the weight is:
-
+where
 $$
-\frac{\partial J}{\partial w_j} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)} - y^{(i)})x_j^{(i)}
-$$
-
-The partial derivative with respect to the bias is:
-
-$$
-\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)} - y^{(i)})
+\alpha = \text{Learning_rate}
+\text{Bias Gradient} = 2 * \text{Mean (error)}
 $$
