@@ -15,4 +15,7 @@ Formulas:
 
 1. Linear Regression Formula:
 2. Update of bias:
+$$
+\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)}-y^{(i)})
+$$
 3. Update of weights:
