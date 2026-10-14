@@ -66,7 +66,7 @@ $$
 5. Loop this process 100 times to minimize our MSE and find a suitable weights and bias.
 6. After obtaining the final value for both weights and bias, use these values to predict exam scores for new students' data.
 
-## Result:
+# Result:
 
 | Parameter | Value |
 |---|---|
@@ -76,7 +76,7 @@ $$
 | Training MSE | ≈ 0 |
 
 
-## Example Predictions
+# Example Predictions
 
 | Study Hours | Attendance | Predicted Exam Score |
 |---|---|---|
