@@ -66,7 +66,7 @@ $$
 5. Loop this process 100 times to minimize our MSE and find a suitable weights and bias.
 6. After obtaining the final value for both weights and bias, use these values to predict exam scores for new students' data.
 
-# Result:
+## Result:
 
 | Parameter | Value |
 |---|---|
@@ -76,11 +76,20 @@ $$
 | Training MSE | ≈ 0 |
 
 
-# Example Predictions
+## Example Predictions
 
 | Study Hours | Attendance | Predicted Exam Score |
 |---|---|---|
 | 4.5 | 72.5% | 67.5 |
 | 6.5 | 82.5% | 77.5 |
 | 8.5 | 92.5% | 87.5 |
+
+# Possible Improvements:
+1. This model uses perfectly correlated training data between the study hours, attendance rate and exam scores. In real life, this model has not been tested, and might not work as well.
+2. This model also uses a small set of data, and can be improved by training a larger set of data.
+3. Compare the implementation with scikit-learn's linear regression model.
+
+# Techonology Used:
+- Python
+- NumPy
 
