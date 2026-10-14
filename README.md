@@ -18,6 +18,9 @@ Formulas:
 
 3. Update of weights:
 
+$$
+w_{\text{new}} = w_{\text{old}} - \alpha \times \text{Weight Gradient}
+$$
 
 ## Gradient Descent
 
