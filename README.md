@@ -31,6 +31,19 @@ $$
 w_{\text{new}} = w_{\text{old}} - \alpha \times \text{Weight Gradient}
 $$
 
+4. Standardization of x:
+
+$$
+x_{\text{scaled}} = \frac{x - \mu}{\sigma}
+$$
+
+5. MSE (Mean Squared Error) :
+
+$$
+\text{MSE} = \frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+$$
+
+
 Where:
 
 $$
@@ -44,3 +57,30 @@ $$
 $$
 \text{Weight Gradient} = 2 \times \text{Mean}(\text{Error} \times X)
 $$
+
+# Process:
+1. First set both weights and bias equal to 0. We also set the learning rate to be 0.1
+2. Because our weight_gradient can return a huge value, possibly resulting in a huge shift (unwanted) because of our current x data, we standardized x
+3. Calculate the prediction using our linear regression formula, then calculate the error. Use this error to find MSE.
+4. Calculate the weight_gradient as well as the bias_gradient, and update both values based on the functions given above.
+5. Loop this process 100 times to minimize our MSE and find a suitable weights and bias.
+6. After obtaining the final value for both weights and bias, use these values to predict exam scores for new students' data.
+
+# Result:
+
+| Parameter | Value |
+|---|---|
+| Weight 1 | 5.7282 |
+| Weight 2 | 5.7282 |
+| Bias | 72.5 |
+| Training MSE | ≈ 0 |
+
+
+# Example Predictions
+
+| Study Hours | Attendance | Predicted Exam Score |
+|---|---|---|
+| 4.5 | 72.5% | 67.5 |
+| 6.5 | 82.5% | 77.5 |
+| 8.5 | 92.5% | 87.5 |
+
