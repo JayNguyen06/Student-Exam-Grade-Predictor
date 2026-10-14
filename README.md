@@ -14,7 +14,16 @@ This project is a simple machine learning model, built from scratch, using NumPY
 Formulas:
 
 1. Linear Regression Formula:
+
+$$
+\text{Predicted Grade} = w_1x_1 + w_2x_2 + b
+$$
+
 2. Update of bias:
+
+$$
+b_{\text{new}} = b_{\text{old}} - \alpha \times \text{Bias Gradient}
+$$
 
 3. Update of weights:
 
