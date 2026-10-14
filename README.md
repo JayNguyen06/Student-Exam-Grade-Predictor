@@ -15,7 +15,20 @@ Formulas:
 
 1. Linear Regression Formula:
 2. Update of bias:
-$$
-\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)}-y^{(i)})
-$$
+
 3. Update of weights:
+
+
+## Gradient Descent
+
+The partial derivative with respect to the weight is:
+
+$$
+\frac{\partial J}{\partial w_j} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)} - y^{(i)})x_j^{(i)}
+$$
+
+The partial derivative with respect to the bias is:
+
+$$
+\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)} - y^{(i)})
+$$
